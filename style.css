@@ -1,1 +1,74 @@
-/* Add styles here */
+:root {
+    --primary-bg-color: #f0f0f0;
+    --container-bg-color: #ffffff;
+    --button-bg-color: #4CAF50;
+    --button-hover-bg-color: #45a049;
+    --text-color: #333;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--container-bg-color);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px var(--shadow-color), 0 6px 6px var(--shadow-color);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#generator-btn {
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#generator-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.number-ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.number-ball:hover {
+    transform: scale(1.1);
+}
