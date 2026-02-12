@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Daily Quotes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="theme-toggle-btn">🌙</button>
+    <button id="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
     <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <button id="generator-btn">Generate Numbers</button>
-        <div id="numbers-container" class="numbers-container"></div>
+        <h1>Daily Inspiration</h1>
+        <div id="quote-box" class="quote-box">
+            <p id="quote-text">"The best way to predict the future is to create it."</p>
+            <p id="quote-author">- Peter Drucker</p>
+        </div>
+        <button id="new-quote-btn">New Quote</button>
     </div>
     <section class="contact-form">
         <h2>Affiliate Inquiry</h2>
