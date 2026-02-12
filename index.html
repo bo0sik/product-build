@@ -3,63 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Quotes</title>
+    <meta name="description" content="Daily Quotes - Get your daily dose of inspiration and wisdom. Explore curated quotes about success, happiness, and life.">
+    <title>Daily Quotes - Inspiration for Success and Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
-    <div class="container">
-        <h1>Daily Inspiration</h1>
-        <div id="quote-box" class="quote-box">
-            <p id="quote-text">"The best way to predict the future is to create it."</p>
-            <p id="quote-author">- Peter Drucker</p>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">Daily Quotes</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Wisdom for Your Daily Life</h1>
+                <p>Welcome to Daily Quotes. We provide curated inspiration to help you navigate through challenges and achieve your dreams. Our mission is to spread positivity and wisdom through the power of words.</p>
+            </div>
+        </section>
+
+        <section id="quotes" class="content-section">
+            <div class="container">
+                <h2>Daily Inspiration</h2>
+                <div id="quote-box" class="quote-box">
+                    <p id="quote-text">"The best way to predict the future is to create it."</p>
+                    <p id="quote-author">- Peter Drucker</p>
+                </div>
+                <button id="new-quote-btn">Get New Quote</button>
+            </div>
+        </section>
+
+        <section id="insights" class="content-section">
+            <div class="container">
+                <h2>Deep Insights</h2>
+                <article class="blog-preview">
+                    <h3>Why Quotes Matter for Success</h3>
+                    <p>Inspiration is the spark that ignites action. Many of the world's most successful leaders and thinkers have relied on wisdom passed down through generations. In this section, we explore the profound impact that a single sentence can have on your mindset.</p>
+                    <p>When you read a quote from someone like Steve Jobs or Eleanor Roosevelt, you're not just reading words; you're accessing years of experience and refined thought. This mental shift is crucial for overcoming obstacles and maintaining focus on your long-term goals.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xqedpepr" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments-section">
+            <div class="container">
+                <h2>Discussion</h2>
+                <div id="disqus_thread"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Daily Quotes</h3>
+                    <p>© 2026 Daily Quotes. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <button id="new-quote-btn">New Quote</button>
-    </div>
-    <section class="contact-form">
-        <h2>Affiliate Inquiry</h2>
-        <form action="https://formspree.io/f/xqedpepr" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
+    </footer>
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="email@example.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-            </div>
-
-            <button type="submit">Send Inquiry</button>
-        </form>
-    </section>
-
-    <section class="comments-section">
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'daily-quotes-home';
+        };
+        (function() {
             var d = document, s = d.createElement('script');
             s.src = 'https://bo0sik.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </section>
-
+        })();
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
