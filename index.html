@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daily Quotes - Get your daily dose of inspiration and wisdom. Explore curated quotes about success, happiness, and life.">
-    <title>Daily Quotes - Inspiration for Success and Life</title>
+    <meta name="description" content="Daily Quotes - Your premium source for inspirational wisdom and success mindset. Explore deep insights and historical quotes to empower your journey.">
+    <title>Daily Quotes - Wisdom, Inspiration, and Success Mindset</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Search Console or AdSense codes would go here -->
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#quotes">Quotes</a></li>
-                <li><a href="#insights">Insights</a></li>
+                <li><a href="#blog">Articles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
@@ -22,61 +23,93 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="container">
-                <h1>Wisdom for Your Daily Life</h1>
-                <p>Welcome to Daily Quotes. We provide curated inspiration to help you navigate through challenges and achieve your dreams. Our mission is to spread positivity and wisdom through the power of words.</p>
+                <h1>Unlock Your Full Potential</h1>
+                <p>Welcome to a curated community dedicated to the power of words. Daily Quotes provides more than just short sentences; we offer a path to a more mindful and successful life through the wisdom of history's greatest minds.</p>
+                <div class="hero-cta">
+                    <a href="#quotes" class="btn-primary">Get Inspired Today</a>
+                </div>
             </div>
         </section>
 
+        <!-- Quote Generator Section -->
         <section id="quotes" class="content-section">
             <div class="container">
-                <h2>Daily Inspiration</h2>
+                <h2 class="section-title">Today's Wisdom</h2>
                 <div id="quote-box" class="quote-box">
                     <p id="quote-text">"The best way to predict the future is to create it."</p>
                     <p id="quote-author">- Peter Drucker</p>
                 </div>
-                <button id="new-quote-btn">Get New Quote</button>
+                <button id="new-quote-btn" class="btn-secondary">Generate New Insight</button>
             </div>
         </section>
 
-        <section id="insights" class="content-section">
+        <!-- Expanded Blog Section for High-Quality Content -->
+        <section id="blog" class="content-section bg-alt">
             <div class="container">
-                <h2>Deep Insights</h2>
-                <article class="blog-preview">
-                    <h3>Why Quotes Matter for Success</h3>
-                    <p>Inspiration is the spark that ignites action. Many of the world's most successful leaders and thinkers have relied on wisdom passed down through generations. In this section, we explore the profound impact that a single sentence can have on your mindset.</p>
-                    <p>When you read a quote from someone like Steve Jobs or Eleanor Roosevelt, you're not just reading words; you're accessing years of experience and refined thought. This mental shift is crucial for overcoming obstacles and maintaining focus on your long-term goals.</p>
-                </article>
+                <h2 class="section-title">In-Depth Insights</h2>
+                <p class="section-subtitle">Exploring the philosophy and science behind motivation.</p>
+                
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3>The Science of Daily Inspiration</h3>
+                            <p>Neuroscience suggests that positive affirmations and inspirational quotes can actually rewire our brain's neural pathways. When we focus on constructive thoughts, our brain releases dopamine, the 'reward' chemical, which enhances focus and creativity.</p>
+                            <p>Consistency is key. By making a habit of reading wisdom every morning, you set a positive 'prime' for your subconscious mind, allowing you to handle stress more effectively throughout the day.</p>
+                            <a href="#" class="read-more">Continue Reading...</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Historical Figures and Their Mantras</h3>
+                        <p>Have you ever wondered what kept leaders like Marcus Aurelius or Winston Churchill going during their darkest hours? They relied on Stoic principles and concise aphorisms to maintain their mental fortitude.</p>
+                        <p>Churchill’s famous line, "Success is not final, failure is not fatal," wasn't just a political soundbite; it was a deeply held belief that allowed him to lead a nation through a world-altering crisis. Understanding the context of these quotes gives them even more power.</p>
+                        <a href="#" class="read-more">Continue Reading...</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Building a Morning Routine for Success</h3>
+                        <p>Most high-performers share one common trait: a structured morning routine. This routine often includes a moment of quiet reflection, reading something profound, and setting a clear intention for the day.</p>
+                        <p>Integrating a single powerful quote into your morning meditation can serve as an 'anchor'—a thought you can return to when things get chaotic. It’s a simple but transformative practice used by CEOs and athletes alike.</p>
+                        <a href="#" class="read-more">Continue Reading...</a>
+                    </article>
+                </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="content-section">
             <div class="container">
-                <h2>Get in Touch</h2>
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/xqedpepr" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <h2 class="section-title">Collaborate With Us</h2>
+                <p class="section-subtitle">Interested in affiliate partnerships or contributing wisdom? Reach out below.</p>
+                <div class="contact-form-wrapper">
+                    <form action="https://formspree.io/f/xqedpepr" method="POST" class="styled-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help each other?" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                        </div>
-                        <button type="submit">Send Inquiry</button>
+                        <button type="submit" class="btn-submit">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="comments-section">
+        <!-- Community Section -->
+        <section class="comments-section bg-alt">
             <div class="container">
-                <h2>Discussion</h2>
+                <h2 class="section-title">Join the Discussion</h2>
                 <div id="disqus_thread"></div>
             </div>
         </section>
@@ -84,18 +117,32 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
+            <div class="footer-content">
+                <div class="footer-brand">
                     <h3>Daily Quotes</h3>
-                    <p>© 2026 Daily Quotes. All rights reserved.</p>
+                    <p>Empowering minds, one word at a time.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#quotes">Quotes</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Daily Quotes. Designed for seekers of wisdom.</p>
             </div>
         </div>
     </footer>
@@ -103,7 +150,7 @@
     <script>
         var disqus_config = function () {
             this.page.url = window.location.href;
-            this.page.identifier = 'daily-quotes-home';
+            this.page.identifier = 'daily-quotes-home-v2';
         };
         (function() {
             var d = document, s = d.createElement('script');
