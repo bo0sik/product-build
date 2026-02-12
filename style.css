@@ -7,6 +7,15 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode {
+    --primary-bg-color: #1a1a1a;
+    --container-bg-color: #2c2c2c;
+    --button-bg-color: #bb86fc;
+    --button-hover-bg-color: #a56ef3;
+    --text-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--primary-bg-color);
@@ -16,6 +25,25 @@ body {
     height: 100vh;
     margin: 0;
     color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--shadow-color);
 }
 
 .container {
@@ -24,6 +52,7 @@ body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px var(--shadow-color), 0 6px 6px var(--shadow-color);
+    transition: background-color 0.3s;
 }
 
 h1 {
