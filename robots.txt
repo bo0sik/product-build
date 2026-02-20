@@ -1,10 +1,32 @@
+# 전역 설정: 모든 로봇에 대해 기본 허용 및 특정 파일 차단
 User-agent: *
 Allow: /
+Disallow: /firebase-debug.log
+Disallow: /wrangler.toml
+Disallow: /_routes.json
+Disallow: /.git/
+Disallow: /.idx/
+Disallow: /.vscode/
+Disallow: /*.log
 
+# 구글 검색 로봇 설정
 User-agent: Googlebot
 Allow: /
 
+# 구글 애드센스 및 광고 관련 로봇 허용
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# 네이버 검색 로봇 설정 (Yeti)
 User-agent: Yeti
 Allow: /
 
+# 다음/카카오 검색 로봇 설정 (Daumoa)
+User-agent: Daumoa
+Allow: /
+
+# 사이트맵 경로 안내
 Sitemap: https://product-build-ern.pages.dev/sitemap.xml
